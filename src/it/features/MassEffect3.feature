@@ -1,15 +1,21 @@
-As a player of Mass Effect 3
-  with a sample equipment load
-  I need to know how many more equipment unlocks I have
+Feature: Mass Effect 3
 
-As a player of Mass Effect 3
-  with a sample equipment load
-  I need to be able to add an unlock for the Kishock Sniper Rifle
+  Scenario: Equipment Counter
+  Given a player of Mass Effect 3
+  When they have a sample equipment load
+  Then they need to know how many more equipment unlocks they have
 
-As a player of Mass Effect 3
-  with a sample character set
-  I need to be able to add an unlock for the Turian Havok
+Scenario: Equipment Updates
+  Given a player of Mass Effect 3
+  When with a sample equipment load
+  Then they need to be able to add an unlock for the Kishock Sniper Rifle
 
-As a player of Mass Effect 3
-  with a sample character set
-  I need to know how many more character unlocks I have
+Scenario: Character Updates
+  Given a player of Mass Effect 3
+  When they have a sample character set
+  Then I need to be able to add an unlock for the Turian Havok
+
+Scenario: Character Counter
+  Given a player of Mass Effect 3
+  When with a sample character set
+  Then I need to know how many more character unlocks I have
